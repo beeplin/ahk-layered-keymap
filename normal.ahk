@@ -17,7 +17,7 @@ LCtrl     i     a     s     t     g     f     h     e     l     o     '      Ent
 
 LShift       x     d     c     r     y     n     m     j     .     /        RShift
 
-LCtrl LWin LAlt                    Space                           LAlt Rwin RCtrl
+LCtrl LWin LAlt                    Space                         RShift Rwin RCtrl
 )"
 
 setLayer "Space", "
@@ -30,5 +30,5 @@ LCtrl     Esc   Left  Enter Right Ins   !     1     2     3     0        AppsKey
 
 LShift    CapsLock Down  PgDn  Del   End   |     4     5     6     ~                              RShift
 
-LCtrl LWin LAlt                    Space                                                 LAlt Rwin RCtrl
+LCtrl LWin LAlt                    Space                                               RShift Rwin RCtrl
 )"
