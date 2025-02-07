@@ -3,6 +3,10 @@
 #Include layer.ahk
 #Include thinkpad.ahk
 
+*+0::}
+*+-::]
+*+[::)
+
 setLayer "", "
 (
 ^     ``    -     =     +     Volume_Down     Volume_Mute     Volume_Up     AppsKey     *     {     [     ]        $
