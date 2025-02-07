@@ -25,7 +25,7 @@ Tab      p     v     u     z     w     q     ,     k     b     ;     (     )    
 
 LCtrl     i     a     s     t     g     f     h     e     l     o     '      Enter
 
-LShift       x     d     r     c     y     m     n     j     .     /        RShift
+LShift       x     d     c     r     y     n     m     j     .     /        RShift
 
 LCtrl LWin LAlt                    Space                           LAlt Rwin RCtrl
 )"
