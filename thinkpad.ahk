@@ -2,5 +2,4 @@
 
 LCtrl::LWin
 LWin::LAlt
-PrintScreen::LAlt
-RCtrl::RWin
+PrintScreen::RWin
