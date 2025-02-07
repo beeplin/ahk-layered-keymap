@@ -1,11 +1,7 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 #Include layer.ahk
-
-thinkpad := true
-#HotIf thinkpad
 #Include thinkpad.ahk
-#HotIf
 
 setLayer "", "
 (
