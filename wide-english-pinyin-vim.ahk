@@ -11,11 +11,11 @@ setLayer "", "
 (
 ^     ``    <     =     >   Volume_Down  Volume_Mute  Volume_Up  AppsKey    -     {     [     +        $
 
-Tab      p     v     u     z     w            WheelLeft            q     ,     k     b     :     (     *
+Tab      p     v     u     z     b            WheelLeft            q     ,     k     o     :     (     *
 
-LCtrl     a     o     s     t     g            WheelRight           f     h     e     l     i          '
+LCtrl     a     r     s     t     g            WheelRight           f     h     e     l     i          '
 
-LShift       x     d     c     r     y                           _     n     m     j     .             /
+LShift       x     d     c     y     w                           _     n     m     j     .             /
 
 LCtrl LWin LAlt                                  Space                                 RShift RWin RCtrl
 )"
