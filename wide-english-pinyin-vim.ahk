@@ -17,7 +17,7 @@ LCtrl     a     r     s     t     g            WheelRight           f     h     
 
 LShift       x     d     c     y     w                           _     n     m     j     .             /
 
-LCtrl LWin LAlt                                  Space                                 RShift RWin RCtrl
+LCtrl  LWin  LAlt                                Space                               RShift  RWin  RCtrl
 )"
 
 setLayer "Space", "
@@ -30,5 +30,5 @@ LCtrl     Esc   Left  Enter Right CapsLock        End               !     1     
 
 LShift       F1    Down  PgDn  Del   \                           ~     |     4     5     6             ?
 
-LCtrl LWin LAlt                                  Space                                 RShift RWin RCtrl
+LCtr l LWin  LAlt                                Space                               RShift  RWin  RCtrl
 )"
