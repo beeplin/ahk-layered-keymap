@@ -4,12 +4,12 @@
 #Include thinkpad.ahk
 
 +]::)
-+-::}
-+=::]
++0::}
+*+-:: Send "{Shift Up}{Shift Down}{Shift Up}]"
 
 setLayer "", "
 (
-^     ``    -     =     +   Volume_Down  Volume_Mute  Volume_Up  AppsKey    <     >     {     [        $
+^     ``    -     =     +   Volume_Down  Volume_Mute  Volume_Up  AppsKey    <     {     [     >        $
 
 Tab      p     v     u     z     w               Home              q     ,     k     b     ;     (     *
 
