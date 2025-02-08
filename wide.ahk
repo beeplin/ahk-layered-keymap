@@ -3,6 +3,9 @@
 #Include layer.ahk
 #Include thinkpad.ahk
 
+*+p::)
+*+0::}
+*+-::]
 
 setLayer "", "
 (
@@ -21,9 +24,9 @@ setLayer "Space", "
 
 F11   F12   F2    F3    F4  Media_Prev  Media_Play_Pause  Media_Next  F5    F6    F7    F8    F9     F10
 
-LAlt     F1    BS    Up    PgUp  Home             Ins              &     7     8     9     @     %     \
+LAlt     F1    BS    Up    PgUp  Home              ?               &     7     8     9     @     %     \
 
-LCtrl     Esc   Left  Enter Right Ins            CapsLock             !     1     2     3     0        ＂
+LCtrl     Esc   Left  Enter Right Ins               ?                 !     1     2     3     0        ＂
 
 LShift    CapsLock Down  PgDn  Del   End                         ~     |     4     5     6             ?
 
