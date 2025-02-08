@@ -3,32 +3,29 @@
 #Include layer.ahk
 #Include thinkpad.ahk
 
-*+0::}
-*+-::]
-*+[::)
 
 setLayer "", "
 (
-^     ``    -     =     +     Volume_Down     Volume_Mute     Volume_Up     AppsKey     *     {     [     ]        $
+^     ``    -     =     +   Volume_Down  Volume_Mute  Volume_Up  AppsKey    <     >     {     [        $
 
-Tab      p     v     u     z     w                 Launch_Mail                 q     ,     k     b     ;     (     "
+Tab      p     v     u     z     w               #                 q     ,     k     b     (     :     ;
 
-LCtrl     i     a     s     t     g                 Launch_Media                f     h     e     l     o          '
+LCtrl     i     a     s     t     g               *                 f     h     e     l     o          '
 
-LShift       x     d     c     r     y                                       _     n     m     j     .             /
+LShift       x     d     c     r     y                           _     n     m     j     .             /
 
-LCtrl LWin LAlt                                        Space                                       RShift RWin RCtrl
+LCtrl LWin LAlt                                 Space                                  RShift RWin RCtrl
 )"
 
 setLayer "Space", "
-(
-F11   F12   F2    F3    F4     Media_Prev  Media_Play_Pause  Media_Next  PrintScreen    F6    F7    F8    F9     F10
 
-LAlt     F1    BS    Up    PgUp  Home               Launch_App1                &     7     8     9     F5    @     %
+F11   F12   F2    F3    F4  Media_Prev  Media_Play_Pause  Media_Next  F5    F6    F7    F8    F9     F10
 
-LCtrl     Esc   Left  Enter Right Ins                Launch_App2                  !     1     2     3     0        #
+LAlt     F1    BS    Up    PgUp  Home             Ins              &     7     8     9     @     %     \
 
-LShift    CapsLock Down  PgDn  Del   End                                     ~     |     4     5     6             \
+LCtrl     Esc   Left  Enter Right Ins            CapsLock             !     1     2     3     0        ＂
 
-LCtrl LWin LAlt                                        Space                                       RShift RWin RCtrl
+LShift    CapsLock Down  PgDn  Del   End                         ~     |     4     5     6             ?
+
+LCtrl LWin LAlt                                 Space                                  RShift RWin RCtrl
 )"
