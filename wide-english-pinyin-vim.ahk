@@ -10,7 +10,7 @@ setLayer "", "
 
 Tab       p     v     u     z     b      Volume_Mute     q     ,     k     o     ;     (      )
 
-Esc/^      a     r     s     t     g      WheelRight      f     h     e     l     i       Enter
+Escape/^   a     r     s     t     g      WheelRight      f     h     e     l     i       Enter
 
 LShift        x     d     c     y     w                _     n     m     j     .              /
 
