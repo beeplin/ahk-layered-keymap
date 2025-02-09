@@ -1,6 +1,7 @@
 #Requires AutoHotkey v2.0
+#SingleInstance Force
 
-key2index := Map()
+physical2index := Map()
 leader2layer := Map()
 
 setKeyboard "
@@ -13,17 +14,17 @@ CapsLock  a     s     d     f     g     h     j     k     l     ;     '      Ent
 
 LShift       z     x     c     v     b     n     m     ,     .     /        RShift
 
-LCtrl LWin LAlt                    Space                        RAlt AppsKey RCtrl
+LControl LWin LAlt                 Space                     RAlt AppsKey RControl
 )"
 
 setKeyboard(str) {
     for index, key in convertLayer(str)
-        key2index[key] := index
+        physical2index[key] := index
 }
 
 setLayer(leader, str) {
     leader2layer[leader] := convertLayer(str)
-    for key in key2index {
+    for key in physical2index {
         hKey := leader = "" ? "*" key : leader " & " key
         Hotkey hKey, sendLayeredKey
         Hotkey hKey " Up", sendLayeredKey
@@ -36,11 +37,14 @@ sendLayeredKey(hKey) {
     layer := leader2layer[leader]
     keyWithUp := array.Length = 1 ? SubStr(array[1], 2) : array[2]
     array := StrSplit(keyWithUp, " ")
-    key := array[1]
-    index := key2index[key]
-    result := layer[index]
-    postfix := array.Length = 1 ? "Down" : "Up"
-    Send("{Blind}{" result " " postfix "}")
+    physical := array[1]
+    index := physical2index[physical]
+    layered := parseCtrlTap(layer[index])
+    direction := array.Length = 1 ? "Down" : "Up"
+    if layered.side = ""
+        Send("{Blind}{" layered.tap " " direction "}")
+    else
+        handleCtrlTap(physical, layered.tap, direction, layered.side)
 }
 
 convertLayer(str) {
@@ -51,4 +55,21 @@ convertLayer(str) {
             break
     }
     return StrSplit(str, " ")
+}
+
+parseCtrlTap(str) {
+    array := StrSplit(str, "/")
+    isCtrlTap := array.Length = 2 and SubStr(str, -1, 1) = "^"
+    return { side: isCtrlTap ? SubStr(array[2], 1, 1) = ">" ? "R" : "L" : "", tap: array[1] }
+
+}
+
+handleCtrlTap(physical, mapped, direction, side) {
+    Send "{" side "Control " direction "}"
+    if direction = "Up" and A_PriorKey = physical {
+        if (A_TimeSincePriorHotkey < 1000)
+            Suspend "1"
+        Send "{Blind}{" mapped "}"
+        Suspend "0"
+    }
 }

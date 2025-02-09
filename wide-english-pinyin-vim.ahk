@@ -1,34 +1,31 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
+
 #Include layer.ahk
 #Include thinkpad.ahk
 
-+]::)
-+0::}
-*+-:: Send "{Shift Up}{Shift Down}{Shift Up}]"
-
 setLayer "", "
 (
-^     ``    <     =     >   Volume_Down  Volume_Mute  Volume_Up  AppsKey    -     {     [     +        $
+~     <     -     =     >     %   Volume_Down  Volume_Up   +     [     ]     {     }        BS
 
-Tab      p     v     u     z     b            WheelLeft            q     ,     k     o     ;     (     *
+Tab       p     v     u     z     b      Volume_Mute     q     ,     k     o     ;     (     )
 
-LCtrl     a     r     s     t     g            WheelRight           f     h     e     l     i          '
+Esc/^      a     r     s     t     g         Home         f     h     e     l     i      Enter
 
-LShift       x     d     c     y     w                           _     n     m     j     .             /
+LShift        x     d     c     y     w                _     n     m     j     .             /
 
-LCtrl  LWin  LAlt                                Space                               RShift  RWin  RCtrl
+WheelLeft/^  LWin  LAlt                    Space                   RShift  RWin  WheelRight/>^
 )"
 
 setLayer "Space", "
 (
-F11   F1    F2    F3    F4  Media_Prev  Media_Play_Pause  Media_Next  F5    F6    F7    F8    F9     F10
+^      F1    F2    F3    F4    F5   Media_Prev  Media_Next  F6    F7    F8    F9    F10      $
 
-F12      LAlt  BS    Up    PgUp  @               Home              &     7     8     9     :     %     #
+#         *     BS    Up    PgUp  F11  Media_Play_Pause  &     7     8     9     :     "     \
 
-LCtrl     Esc   Left  Enter Right CapsLock        End               !     1     2     3     0          "
+CapsLock/^ LAlt  Left  Enter Right F12        End         !     1     2     3     0          '
 
-LShift       Del   Down  PgDn  Ins   \                           ~     |     4     5     6             ?
+LShift        Del   Down  PgDn  Ins   ``               @     |     4     5     6             ?
 
-LCtrl  LWin  LAlt                                Space                               RShift  RWin  RCtrl
+PrintScreen/^  LWin  LAlt                Space                       RShift  RWin  AppsKey/>^
 )"
