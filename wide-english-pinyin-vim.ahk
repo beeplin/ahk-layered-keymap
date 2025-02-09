@@ -6,7 +6,7 @@
 
 setLayer "", "
 (
-%      ~     {     }     [     ]   Volume_Down  Volume_Up   <     >     -     =     +       BS
+%      ``    {     }     [     ]   Volume_Down  Volume_Up   <     >     -     =     +       BS
 
 Tab       p     v     u     z     b      Volume_Mute     q     ,     k     o     ;     (     )
 
@@ -25,7 +25,7 @@ setLayer "Space", "
 
 CapsLock/^ LAlt  Left  Enter Right F12     WheelLeft      !     1     2     3     0          '
 
-LShift        Del   Down  PgDn  Ins   ``               @     |     4     5     6             ?
+LShift        Del   Down  PgDn  Ins   ~                @     |     4     5     6             ?
 
 PrintScreen/^  LWin  LAlt                   Space                     RShift  RWin  AppsKey/>^
 )"
