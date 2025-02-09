@@ -28,7 +28,7 @@ F12      LAlt  BS    Up    PgUp  @               Home              &     7     8
 
 LCtrl     Esc   Left  Enter Right CapsLock        End               !     1     2     3     0          "
 
-LShift       Ins   Down  PgDn  Del   \                           ~     |     4     5     6             ?
+LShift       Del   Down  PgDn  Ins   \                           ~     |     4     5     6             ?
 
 LCtrl  LWin  LAlt                                Space                               RShift  RWin  RCtrl
 )"
