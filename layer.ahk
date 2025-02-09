@@ -23,28 +23,14 @@ setKeyboard(str) {
 }
 
 setLayer(leader, str) {
-    leader2layer[leader] := convertLayer(str)
-    for key in physical2index {
-        hKey := leader = "" ? "*" key : leader " & " key
-        Hotkey hKey, sendLayeredKey
-        Hotkey hKey " Up", sendLayeredKey
+    layer := convertLayer(str)
+    leader2layer[leader] := layer
+    for physical, index in physical2index {
+        hKey := leader = "" ? "*" physical : leader " & " physical
+        layered := parseCtrlTap(layer[index])
+        Hotkey hKey, sendLayered(physical, "Down", layered)
+        Hotkey hKey " Up", sendLayered(physical, "Up", layered)
     }
-}
-
-sendLayeredKey(hKey) {
-    array := StrSplit(hKey, " & ")
-    leader := array.Length = 1 ? "" : array[1]
-    layer := leader2layer[leader]
-    keyWithUp := array.Length = 1 ? SubStr(array[1], 2) : array[2]
-    array := StrSplit(keyWithUp, " ")
-    physical := array[1]
-    index := physical2index[physical]
-    layered := parseCtrlTap(layer[index])
-    direction := array.Length = 1 ? "Down" : "Up"
-    if layered.side = ""
-        Send("{Blind}{" layered.tap " " direction "}")
-    else
-        handleCtrlTap(physical, layered.tap, direction, layered.side)
 }
 
 convertLayer(str) {
@@ -62,6 +48,12 @@ parseCtrlTap(str) {
     isCtrlTap := array.Length = 2 and SubStr(str, -1, 1) = "^"
     return { side: isCtrlTap ? SubStr(array[2], 1, 1) = ">" ? "R" : "L" : "", tap: array[1] }
 
+}
+
+sendLayered(physical, direction, layered) {
+    return hk => layered.side = "" ?
+        Send("{Blind}{" layered.tap " " direction "}") :
+            handleCtrlTap(physical, layered.tap, direction, layered.side)
 }
 
 handleCtrlTap(physical, mapped, direction, side) {
