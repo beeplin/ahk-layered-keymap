@@ -22,13 +22,13 @@ LCtrl  LWin  LAlt                                Space                          
 
 setLayer "Space", "
 (
-F11   F12   F2    F3    F4  Media_Prev  Media_Play_Pause  Media_Next  F5    F6    F7    F8    F9     F10
+F11   F1    F2    F3    F4  Media_Prev  Media_Play_Pause  Media_Next  F5    F6    F7    F8    F9     F10
 
-LAlt     Ins   BS    Up    PgUp  @               Home              &     7     8     9     :     %     #
+F12      LAlt  BS    Up    PgUp  @               Home              &     7     8     9     :     %     #
 
 LCtrl     Esc   Left  Enter Right CapsLock        End               !     1     2     3     0          "
 
-LShift       F1    Down  PgDn  Del   \                           ~     |     4     5     6             ?
+LShift       Ins   Down  PgDn  Del   \                           ~     |     4     5     6             ?
 
-LCtr l LWin  LAlt                                Space                               RShift  RWin  RCtrl
+LCtrl  LWin  LAlt                                Space                               RShift  RWin  RCtrl
 )"
