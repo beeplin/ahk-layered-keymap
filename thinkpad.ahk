@@ -3,7 +3,7 @@
 
 isThinkpad := false
 
-#PrintScreen:: {
+^PrintScreen:: {
     isThinkpad := not isThinkpad
 }
 
