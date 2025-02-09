@@ -4,20 +4,20 @@
 physical2index := Map()
 leader2layer := Map()
 
-setKeyboard "
+setPhysicalKeyboard "
 (
-``    1     2     3     4     5     6     7     8     9     0     -     =       BS
+``    1     2     3     4     5     6     7     8     9     0     -     =  BackSpace
 
-Tab      q     w     e     r     t     y     u     i     o     p     [     ]     \
+Tab      q     w     e     r     t     y     u     i     o     p     [     ]       \
 
-CapsLock  a     s     d     f     g     h     j     k     l     ;     '      Enter
+CapsLock  a     s     d     f     g     h     j     k     l     ;     '        Enter
 
-LShift       z     x     c     v     b     n     m     ,     .     /        RShift
+LShift       z     x     c     v     b     n     m     ,     .     /          RShift
 
-LControl LWin LAlt                 Space                     RAlt AppsKey RControl
+LControl LWin LAlt                  Space                      RAlt AppsKey RControl
 )"
 
-setKeyboard(str) {
+setPhysicalKeyboard(str) {
     for index, key in convertLayer(str)
         physical2index[key] := index
 }
