@@ -1,13 +1,12 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
-thinkpad := false
+isThinkpad := false
 
 #PrintScreen:: {
-    thinkpad := true
+    isThinkpad := not isThinkpad
 }
 
-#HotIf thinkpad
-LCtrl::LWin
+#HotIf isThinkpad
 PrintScreen::RWin
 #HotIf
