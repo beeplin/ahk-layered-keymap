@@ -11,7 +11,7 @@ setLayer "", "
 
 Tab       y     z     u     r     p      Volume_Mute     b     f     k     l     ;     (      )
 
-Escape/^   a     i     s     t     g      WheelRight      m     n     e     o     h           '
+Escape/^   a     i     s     t     g      WheelRight      m     n     e     h     o           '
 
 LShift        x     c     d     v     q                _     w     j     ,     .              /
 
