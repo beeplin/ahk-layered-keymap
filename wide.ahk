@@ -7,26 +7,26 @@
 
 setLayer "", "
 (
-~      ``    {     }     [     ]   Volume_Down  Volume_Up   <     >     -     =     + BackSpace
+~      ``    {     }     [     ]   Volume_Down  Volume_Up   <     >     -     =     +         \
 
-Tab       z     v     u     p     b      Volume_Mute     q     f     k     o     ;     (      )
+Tab       y     z     u     p     b      Volume_Mute     q     f     k     l     ;     (      )
 
-Escape/^   a     r     s     t     g      WheelRight      m     h     e     l     i       Enter
+Escape/^   a     r     s     t     g      WheelRight      m     n     e     o     i           '
 
-LShift        x     c     d     y     w                _     n     j     ,     .              /
+LShift        x     c     d     v     w                _     h     j     ,     .              /
 
-Home/^         LWin  LAlt                  Space                       RShift  RWin      End/>^
+Left/^         LWin  LAlt                  Space                       RShift  RWin    Right/>^
 )"
 
 setLayer "Space", "
 (
 ^      F1    F2    F3    F4    F5   Media_Prev  Media_Next  F6    F7    F8    F9    F10       $
 
-%      LAlt BackSpace Up    PgUp  F11  Media_Play_Pause  &     7     8     9     :     "      \
+*         LAlt  Left  Up    PgUp  F11  Media_Play_Pause  &     7     8     9     :     %      #
 
-CapsLock/^ Insert Left Enter Right F12    WheelLeft       !     1     2     3     0           '
+CapsLock/^ Ins   BS    Enter Del   F12    WheelLeft       !     1     2     3     0           "
 
-LShift       Delete PgDn  Down  *     #                @     |     4     5     6              ?
+LShift        Home  PgDn  Down  Right End              @     |     4     5     6              ?
 
 PrintScreen/^  LWin  LAlt                  Space                       RShift  RWin  AppsKey/>^
 )"
