@@ -7,7 +7,7 @@
 
 setLayer "", "
 (
-~      ``    {     }     [     ]   Volume_Down  Volume_Up   <     >     -     =     +         \
+~      ``    <     >     {     }   Volume_Down  Volume_Up   +     -     =     [     ]         \
 
 Tab       y     z     u     p     b      Volume_Mute     q     f     k     l     ;     (      )
 
