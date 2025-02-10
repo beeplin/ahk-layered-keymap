@@ -40,7 +40,6 @@ convertLayer(str) {
 parseCtrlTap(str) {
     array := StrSplit(str, "/")
     isCtrlTap := array.Length = 2 and SubStr(str, -1, 1) = "^"
-    ToolTip isCtrlTap
     return {
         ctrl: isCtrlTap ? SubStr(array[2], 1, 1) = ">" ? "RControl" : "LControl" : "",
         tap: isCtrlTap ? array[1] : str
