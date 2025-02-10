@@ -9,7 +9,7 @@ setLayer "", "
 (
 ~      ``    {     }     [     ]   Volume_Down  Volume_Up   <     >     -     =     + BackSpace
 
-Tab       p     v     u     z     b      Volume_Mute     q     f     k     o     ;     (      )
+Tab       z     v     u     p     b      Volume_Mute     q     f     k     o     ;     (      )
 
 Escape/^   a     r     s     t     g      WheelRight      m     h     e     l     i       Enter
 
