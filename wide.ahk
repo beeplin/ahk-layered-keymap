@@ -9,11 +9,11 @@ setLayer "", "
 (
 %      ``    <     >     {     }   Volume_Down  Volume_Up   +     -     =     [     ]         \
 
-Tab       y     z     u     p     w      Volume_Mute     b     f     k     l     ;     (      )
+Tab       y     z     u     r     p      Volume_Mute     b     f     k     l     ;     (      )
 
-Escape/^   a     r     s     t     g      WheelRight      m     n     e     o     i           '
+Escape/^   a     i     s     t     g      WheelRight      m     n     e     o     h           '
 
-LShift        x     c     d     v     q                _     h     j     ,     .              /
+LShift        x     c     d     v     q                _     w     j     ,     .              /
 
 Left/^         LWin  LAlt                  Space                       RShift  RWin    Right/>^
 )"
