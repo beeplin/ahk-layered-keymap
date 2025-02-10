@@ -40,8 +40,10 @@ convertLayer(str) {
 parseCtrlTap(str) {
     array := StrSplit(str, "/")
     isCtrlTap := array.Length = 2 and SubStr(str, -1) = "^"
-    return { ctrl: isCtrlTap ? SubStr(array[2], 1, 1) = ">" ? "RControl" : "LControl" : "", tap: array[1] }
-
+    return {
+        ctrl: isCtrlTap ? SubStr(array[2], 1, 1) = ">" ? "RControl" : "LControl" : "",
+        tap: array[1]
+    }
 }
 
 sendLayered(physical, direction, layered) {
