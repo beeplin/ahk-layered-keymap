@@ -20,9 +20,9 @@ Left/^         LWin  LAlt                  Space                       RShift  R
 
 setLayer "Space", "
 (
-^      F1    F2    F3    F4    F5   Media_Prev  Media_Next  F6    F7    F8    F9    F10       $
+#      F1    F2    F3    F4    F5   Media_Prev  Media_Next  F6    F7    F8    F9    F10       %
 
-*         LAlt  Left  Up    PgUp  F11  Media_Play_Pause  &     7     8     9     :     %      #
+*         LAlt  Left  Up    PgUp  F11  Media_Play_Pause  &     7     8     9     :     ^      $
 
 CapsLock/^ Ins   BS    Enter Del   F12    WheelLeft       !     1     2     3     0           "
 
