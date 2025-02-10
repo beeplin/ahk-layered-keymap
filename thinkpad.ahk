@@ -4,6 +4,7 @@
 isThinkpad := false
 
 ^!#PrintScreen:: {
+    global isThinkpad
     isThinkpad := not isThinkpad
 }
 

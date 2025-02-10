@@ -2,7 +2,6 @@
 #SingleInstance Force
 
 #Include layer.ahk
-#Include thinkpad.ahk
 
 setLayer "", "
 (

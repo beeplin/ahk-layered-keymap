@@ -1,6 +1,8 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
+#Include thinkpad.ahk
+
 physicalKeyboard := convertLayer("
 (
 ``    1     2     3     4     5     6     7     8     9     0     -     =  BackSpace
@@ -12,7 +14,8 @@ CapsLock  a     s     d     f     g     h     j     k     l     ;     '        E
 LShift       z     x     c     v     b     n     m     ,     .     /          RShift
 
 LControl LWin LAlt                  Space                      RAlt AppsKey RControl
-)")
+)"
+)
 
 setLayer(leader, str) {
     layer := convertLayer(str)

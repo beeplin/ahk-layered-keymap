@@ -1,8 +1,9 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
+; this keymap is optimized for english, pinyin, vim and vscode
+
 #Include layer.ahk
-#Include thinkpad.ahk
 
 setLayer "", "
 (
