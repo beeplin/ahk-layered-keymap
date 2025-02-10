@@ -9,11 +9,11 @@ setLayer "", "
 (
 ~      ``    {     }     [     ]   Volume_Down  Volume_Up   <     >     -     =     + BackSpace
 
-Tab       p     v     u     z     b      Volume_Mute     q     ,     k     o     ;     (      )
+Tab       p     v     u     z     b      Volume_Mute     q     f     k     o     ;     (      )
 
-Escape/^   a     r     s     t     g      WheelRight      f     h     e     l     i       Enter
+Escape/^   a     r     s     t     g      WheelRight      m     h     e     l     i       Enter
 
-LShift        x     d     c     y     w                _     n     m     j     .              /
+LShift        x     c     d     y     w                _     n     j     ,     .              /
 
 Home/^         LWin  LAlt                  Space                       RShift  RWin      End/>^
 )"
@@ -26,7 +26,7 @@ setLayer "Space", "
 
 CapsLock/^ Insert Left Enter Right F12    WheelLeft       !     1     2     3     0           '
 
-LShift       Delete Down  PgDn  *     #                @     |     4     5     6              ?
+LShift       Delete PgDn  Down  *     #                @     |     4     5     6              ?
 
 PrintScreen/^  LWin  LAlt                  Space                       RShift  RWin  AppsKey/>^
 )"
