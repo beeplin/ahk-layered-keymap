@@ -15,7 +15,7 @@ Escape/^    a     i     s     t     g     WheelRight      m     h     e     l   
 
 LShift         x     c     d     v     q               _     n     j     ,     .              /
 
-Left/^         LWin  LAlt                  Space                       RShift  RWin    Right/>^
+Left/^         LWin  LAlt                   Space                      RShift  RWin    Right/>^
 )"
 
 setLayer "Space", "
@@ -28,5 +28,5 @@ CapsLock/^  LAlt  Left  Enter Right F12   WheelLeft       !     1     2     3   
 
 LShift         Home  PgDn  Down  Del   End             ~     |     4     5     6              ?
 
-PrintScreen/^  LWin  LAlt                  Space                       RShift  RWin      Ins/>^
+PrintScreen/^  LWin  LAlt                   Space                      RShift  RWin      Ins/>^
 )"
