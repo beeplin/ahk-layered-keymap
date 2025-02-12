@@ -30,3 +30,6 @@ LShift         Home  PgDn  Down  Del   End             ~     |     4     5     6
 
 PrintScreen/^  LWin  LAlt                   Space                      RShift  RWin      Ins/>^
 )"
+
+Esc::%
+Space & Esc::AppsKey

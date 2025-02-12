@@ -41,7 +41,7 @@ parseCtrlTap(str) {
     array := StrSplit(str, "/")
     isCtrlTap := array.Length = 2 and SubStr(str, -1, 1) = "^"
     return {
-        ctrl: isCtrlTap ? SubStr(array[2], 1, 1) = ">" ? "RControl" : "LControl" : "",
+        ctrl: isCtrlTap ? array[2] = ">^" ? "RControl" : "LControl" : "",
         tap: isCtrlTap ? array[1] : str
     }
 }
